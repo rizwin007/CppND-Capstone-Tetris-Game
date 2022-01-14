@@ -19,7 +19,7 @@ The following keyboard inputs are accepted:
 | right arrow     | move the tetromino right     |
 | up arrow        | rotate the tetromino clockwise    |
 | down arrow      | move the tetromino down     |
-| space           | drop down the tetromino until it collides with a block or border |
+| space           | drop the tetromino down until it collides with a block or border |
 | r               | restart the game |
 | q               | quit game |
 
@@ -31,8 +31,14 @@ The following keyboard inputs are accepted:
   - Mac: [install Xcode command line tools to get make](https://developer.apple.com/xcode/features/)
   - Windows: [Click here for installation instructions](http://gnuwin32.sourceforge.net/packages/make.htm)
 - SDL >= 2.0
-  - All installation instructions can be found [here](https://wiki.libsdl.org/Installation)
-  - Note that for Linux, an `apt` or `apt-get` installation is preferred to building from source.
+  - Use the following commands to install it on Linux:  
+  ```
+  sudo apt install libsdl2-dev
+  sudo apt install libsdl2-ttf-dev
+  sudo apt install libsdl2-image-dev
+  ```
+  - To install from source, all installation instructions can be found [here](https://wiki.libsdl.org/Installation)
+   
 - gcc/g++ >= 7.5.0
   - Linux: gcc / g++ is installed by default on most Linux distros
   - Mac: same deal as make - [install Xcode command line tools](https://developer.apple.com/xcode/features/)
@@ -91,4 +97,3 @@ The following rubric points are addressed:
 1. The project makes use of references in function declarations  ./src/board.h:15, 16
 1. The project uses destructors appropriately: src/renderer.cpp:34
 1. The project uses smart pointers instead of raw pointers: ./src/game.h:19, ./src/main.cpp:15
-
