@@ -41,8 +41,10 @@ void Board::PlaceGrid(SDL_Renderer* renderer, Tetromino t)
                 break;
             };
 
-            SDL_Rect rect{ x * 720 / 2 / 10, y * 720 / 2 / 10 ,720 / 2 / 10, 720 / 2 / 10  };
+            SDL_Rect rect{ x * 720 / 2 / 10, y * 720 / 2 / 10 , 720 / 2 / 10, 720 / 2 / 10  };
             SDL_RenderFillRect(renderer, &rect);
+            SDL_SetRenderDrawColor(renderer, 0x00, 0x00, 0x00, 0xff);
+            SDL_RenderDrawRect(renderer, &rect);
         }
     }
 }
