@@ -1,6 +1,8 @@
-# C++ nanodegree: Capstone Project - Tetris Game 
+# C++ Nanodegree: Capstone Project - Tetris Game 
 Implementation of Game [Tetris](https://en.wikipedia.org/wiki/Tetris) for the Capstone project as a part of the  
 [Udacity C++ Nanodegree program](https://www.udacity.com/course/c-plus-plus-nanodegree--nd213).
+
+<img src="Tetris.jpg"/>
 
 ## How to play
 The target of this game is to place the falling blocks (or tetrominos) in such  
