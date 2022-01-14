@@ -2,7 +2,7 @@
 #include <iostream>
 #include <string>
 
-Game::Game() : _tetromino{ static_cast<Shape>(rand() % 7) }, _moveTime(SDL_GetTicks())
+Game::Game() : _tetromino{ static_cast<Shape>(rand() % 7) }, _moveTime(SDL_GetTicks()),  _board{Board()}
 {   
     _level = 1;
     _dropSpeed = 800;

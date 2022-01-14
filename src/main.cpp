@@ -18,7 +18,6 @@ int main(int argc, char *argv[])
 
 	while(true)
 	{
-		//if(!game.Run(&renderer, kMsPerFrame))
 		if(!game.Run(kMsPerFrame))
 			break;
 	}
