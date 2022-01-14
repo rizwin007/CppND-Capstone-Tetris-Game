@@ -55,7 +55,7 @@ void Renderer::present()
 
 void Renderer::ErrorReporting(ErrorType e, int score) 
 {
-    std::string score_text = "\rScore: " + std::to_string(score);
+    std::string score_text = "\nScore: " + std::to_string(score);
 
     switch(e)
     {
